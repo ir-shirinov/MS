@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="ручная работа, вязанные игрушки">
+    <meta name="decription" content="Лучший сайт по вязнным игрушкам ручной работы">
+    <title>Каталог MISHKA</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="#" width="" height="" alt="Логотип компнии Мишка">
+      </a> 
+
+      <nav class="main-nav">
+        <button class="main-nav_toogle" type="button">Открыть меню</button>
+
+        <ul class="main-nav__list">
+          <li class="main-nav__items">
+            <a class="main-nav__link" href="#" >Каталог товаров</a>
+          </li>
+          <li class="main-nav--items">
+            <a class="main-nav__link" href="#" >Вязание на заказ</a>
+          </li>
+        </ul>
+
+        <div class="main-nav__wrapper">
+          <input class="main-nav__search" type="search" name="search-site" id ="search-site" placeholder="Поиск по сайту">
+          <label for="search-site" class="visually-hidden">Поиск по сайту</label>
+        </div>
+      </nav>
+
+      <a class="page-header__cart" href="#">Корзина: пока пуста</a>
+    </header>
+
+    <main class="page-main">
+      <h1 class="page-main__title">Каталог товаров</h1>
+
+      <section class="goods">
+        <h2 class="visually-hidden">Вязанные игрушки</h1>
+
+        <ul class="goods__list">
+          <li class="goods__item">
+            <a class="goods__link" href="#">
+              <img class="goods__image" src="#" width="260" height="195" alt="Вязанный зайчик">
+              <h3 class="goods__title">Зайчик-попрыгайчик</h3>
+            </a>
+            <p class="goods__about">Рост 30 см, вес 200 г</p>
+            <b class="goods__price">1200руб.<span class="goods__cart">Добавить в корзину</span></b>
+          </li>
+
+          <li class="goods__item">
+            <a class="goods__link" href="#">
+              <img class="goods__image" src="#" width="260" height="195" alt="Вязанная корзинка для белья">
+              <h3 class="goods__title">Корзинка для белья</h3>
+            </a>
+            <p class="goods__about">Диаметр 15 см, высота 10 см</p>
+            <b class="goods__price">690руб.<span class="goods__cart">Добавить в корзину</span></b>
+          </li>
+
+          <li class="goods__item">
+            <a class="goods__link" href="#">
+              <img class="goods__image" src="#" width="260" height="195" alt="Вязанная корзинка для игрушек">
+              <h3 class="goods__title">Большая корзинка для игрушек</h3>
+            </a>
+            <p class="goods__about">Диаметр 30 см, высота 30 см</p>
+            <b class="goods__price">1500руб.<span class="goods__cart">Добавить в корзину</span></b>
+          </li>
+        </ul>
+      </section>
+
+      <section class="production">
+        <h2 class="production__title">Процесс производства</h2>
+        <video class="production__video" src="#" poster="#" width="" height=""></video>
+        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <button class="production__button button">Сделать заказ</button>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social-link social_instagramm" href="#"><span class="visually-hidden">Instagramm</span></a>
+          </li>
+        </ul>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social-link social_facebook" href="#"><span class="visually-hidden">Facebook</span></a>
+          </li>
+        </ul>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social-link social_twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text"></b>
+        <a class="copyright__link" href="#">HTML Academy</a>
+      </div>
+    </footer>
+
+    <div class="modal modal-buy">
+      <div class="modal-byu__wrapper">
+        <b class="modal-byu__title">Добавить в корзину</b>
+        <span class="modal-byu__subtitle">Выберите размер:</span>
+
+        <div class="modal-byu__container">
+          <button class="modal-byu__button modal-byu__button--choice button">S</button>
+          <button class="modal-byu__button button">M</button>
+          <button class="modal-byu__button button">L</button>
+        </div>
+
+        <button class="modal-byu__add button">Добавить</button>
+      </div>
+    </div>
+
+  </body>
+</html>
