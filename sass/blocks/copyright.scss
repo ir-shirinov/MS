@@ -1,0 +1,19 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 22px 0;
+
+  vertical-align: middle;
+}
+
+.copyright__link {
+  display: block;
+  height:36px;
+  width: 80px;
+
+  background-image: url("../img/htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}

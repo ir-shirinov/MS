@@ -1,0 +1,27 @@
+.catalog__list {
+@include reset-list;
+}
+
+.catalog__link {
+  display: block;
+  padding: 27px $side-padding;
+  padding-right: 160px;
+
+  @include font-bold-black;
+  color: white;
+  text-decoration: none;
+}
+
+.catalog__link-acsessuares {
+  background-color: #63d1bb;
+  background-image: url("../img/icon-interior.svg");
+  background-position: top 50% right 37px;
+  background-repeat: no-repeat;
+}
+
+.catalog__link-toys {
+  background-color: #56c3b2;
+  background-image: url("../img/icon-toy.svg");
+  background-position: top 50% right 27px;
+  background-repeat: no-repeat;
+}

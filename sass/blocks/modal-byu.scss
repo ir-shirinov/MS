@@ -1,0 +1,42 @@
+.modal-byu__title {
+  @include title;
+  display: block;
+
+  margin-bottom: 15px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-byu__subtitle {
+  @include font-text;
+  display: block;
+
+  margin-bottom: 20px;
+
+  line-height: 30px;
+  text-align: center;
+}
+
+.modal-byu__container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.modal-byu__button{
+  width: 31.53%;
+
+  border-color: #ececec;
+}
+
+.modal-byu__button--choice {
+  border-color: $main-color;
+}
+
+.modal-byu__add {
+  color: #fff;
+
+  background-color: $main-color;
+  border: none;
+}
