@@ -1,0 +1,70 @@
+.hit {
+  margin-top: 30px;
+  padding: 0 $side-padding;
+}
+
+.hit__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 17px;
+  line-height: 20px;
+  color: $main-color;
+  text-transform: uppercase;
+}
+
+.hit__subtitle {
+  @include title;
+}
+
+.hit__about {
+  margin: 0;
+  margin-bottom: 43px;
+
+  @include font-text;
+  line-height: 20px;
+}
+
+.hit__table {
+  width: 100%;
+  margin-bottom: 28px;
+
+  @include font-text;
+  line-height: 20px;
+  text-align: left;
+
+  border-collapse: collapse;
+}
+
+.hit__row {
+  border-bottom: $border-top;
+}
+
+.hit__field {
+  width: 38.46%;
+
+  @include font-text;
+  padding: 10px 0;
+}
+
+.hit__value {
+  padding: 10px 0;
+}
+
+.hit__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.hit__price {
+  margin: 0;
+  margin-bottom: 28px;
+
+  text-align: center;
+  color: #444;
+}
+
+.hit__button {
+  margin-bottom: 35px;
+}

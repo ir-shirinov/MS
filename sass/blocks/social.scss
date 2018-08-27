@@ -1,0 +1,35 @@
+.social__list {
+  @include reset-list;
+  width: 100%;
+
+  font-size: 0;
+  text-align: center;
+  line-height: 0;
+}
+
+.social__item {
+  display: inline-block;
+  width: 20%;
+
+  font-size: 17px;
+}
+
+.social__link {
+  display: block;
+  height: 80px;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social__instagramm {
+  background-image: url("../img/icon-insta.svg");
+}
+
+.social__facebook {
+  background-image: url("../img/icon-fb.svg");
+}
+
+.social__twitter {
+  background-image: url("../img/icon-twitter.svg");
+}

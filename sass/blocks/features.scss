@@ -1,0 +1,46 @@
+.features {
+  margin-top: 35px;
+  padding: 0 $side-padding;
+}
+
+.features__title {
+  @include title;
+}
+
+.features__list {
+  @include reset-list;
+}
+
+.features__item{
+  padding-top: 90px;
+
+  line-height: 20px;
+  text-align: left;
+
+  background-repeat: no-repeat;
+  background-position: top 35px left 0;
+}
+
+.features__ecologically {
+  background-image: url("../img/icon-feature-flower.svg");
+}
+
+.features__price {
+  background-image: url("../img/icon-feature-money.svg");
+}
+
+.features__like {
+  background-image: url("../img/icon-feature-heart.svg");
+}
+
+.features__hand-made {
+  background-image: url("../img/icon-feature-ball.svg");
+}
+
+.features__national {
+  background-image: url("../img/icon-feature-rocket.svg");
+}
+
+.features__packaging {
+  background-image: url("../img/icon-feature-gift.svg");
+}
