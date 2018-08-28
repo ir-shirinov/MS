@@ -1,0 +1,27 @@
+@mixin font-bold-black {
+  font: bold 17px/24px "Open Sans", "Arial", sans-serif;
+  color: #000;
+}
+
+@mixin reset-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+@mixin font-text {
+  padding: 0;
+  margin: 0;
+
+  font: 400 15px/24px "Open Sans", "Arial", sans-serif;
+  color: #444;
+}
+
+@mixin title {
+  margin: 0;
+
+  font: bold 25px/30px "Open Sans", "Arial", sans-serif;
+  color: #000;
+  text-align: left;
+}

@@ -1,0 +1,19 @@
+.page-header {
+  position: relative;
+  padding: 0 $side-padding;
+}
+
+.page-header__logo {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  border-top: $border-top;
+}
+
+.page-header__logo-image {
+  display: block;
+  width: 86px;
+  height: 36px;
+  margin: 0 auto;
+}

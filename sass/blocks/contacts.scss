@@ -1,0 +1,72 @@
+.contacts {
+  padding-top: 41px;
+}
+
+.contacts__wrapper {
+  padding: 0 $side-padding;
+}
+
+.contacts__title {
+  @include title;
+
+  margin-bottom: 35px;
+}
+
+.contacts__table{
+  display: block;
+  width: 100%;
+
+  border-collapse: collapse;
+  @include font-text;
+  text-align: left;
+  line-height: 30px;
+}
+
+.contacts__field {
+  @include font-text;
+
+  padding-bottom: 35px;
+
+  width: 30%;
+
+  line-height: 30px;
+  vertical-align: top;
+}
+
+.contacts__value {
+  line-height: 30px;
+  vertical-align: top;
+}
+
+.contacts__email {
+  @include font-text;
+  text-decoration: none;
+  border-bottom: 1px solid $main-color;
+}
+
+.contacts__container{
+  position: relative;
+
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.contacts__map-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.contacts__map-interactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  border: none;
+}
+
+.contacts__write {
+  margin-bottom: 40px;
+}

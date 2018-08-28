@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="ручная работа, вязанные игрушки">
     <meta name="decription" content="Лучший сайт по вязнным игрушкам ручной работы">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <title>MISHKA</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
 
     <header class="page-header">
       <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="#" width="" height="" alt="Логотип компнии Мишка">
-      </a> 
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="Логотип компнии Мишка">
+      </a>
 
       <nav class="main-nav">
-        <button class="main-nav_toogle" type="button">Открыть меню</button>
+        <button class="main-nav__toogle" type="button">Открыть меню</button>
 
         <ul class="main-nav__list">
           <li class="main-nav__items">
@@ -29,48 +31,50 @@
           <input class="main-nav__search" type="search" name="search-site" id ="search-site" placeholder="Поиск по сайту">
           <label for="search-site" class="visually-hidden">Поиск по сайту</label>
         </div>
-      </nav>
 
-      <a class="page-header__cart" href="#">Корзина: пока пуста</a>
+        <a class="page-header__cart" href="#">Корзина: пока пуста</a>
+      </nav>
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title page-main__title--background">Милые штуки ручной работы для дома</h1>
+      <h1 class="page-main__title page-main__title--background">Милые штуки<br>ручной<br>работы для дома</h1>
 
       <section class="catalog">
         <h2 class="visually-hidden">Каталог товаров</h2>
 
         <ul class="catalog__list">
           <li class="catalog__items">
-            <a class="catalog__link" href="#">Предметы интерьера</a>
+            <a class="catalog__link catalog__link-acsessuares" href="#">Предметы интерьера</a>
           </li>
           <li class="catalog__items">
-            <a class="catalog__link" href="#">Детские игрушки</a>
+            <a class="catalog__link catalog__link-toys" href="catalog.html">Детские игрушки</a>
           </li>
         </ul>
       </section>
 
       <section class="hit">
-        <h2 class="hit__title">товар недели</h2>
         <h3 class="hit__subtitle">Вязаные корзинки</h3>
+        <h2 class="hit__title">товар недели</h2>
+
+
         <p class="hit__about">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
         <table class="hit__table">
-          <tr>
+          <tr class="hit__row">
             <th class="hit__field">Цвет:</th>
             <td class="hit__value">"Тифанни"/серый</td>
           </tr>
-          <tr>
-            <th class="hit__field">Диаметр:/th>
+          <tr class="hit__row">
+            <th class="hit__field">Диаметр:</th>
             <td class="hit__value">25 см</td>
           </tr>
-          <tr>
+          <tr class="hit__row">
             <th class="hit__field">Высота:</th>
             <td class="hit__value">15 см</td>
           </tr>
         </table>
 
-        <img class="hit__image" src="#" width="" height="" alt="3 вязанные корзинки">
+        <img class="hit__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="3 вязанные корзинки">
         <p class="hit__price">Цена: 990 руб.</p>
         <button class="hit__button button" type="button">Заказать</button>
       </section>
@@ -80,7 +84,7 @@
         <ul class="features__list">
           <li class="features__item features__ecologically">Экологически чистые материалы</li>
           <li class="features__item features__price">Скандинавский стиль по российской цене</li>
-          <li class="features__item features__like">Увеличивает лайкина фотографиях</li>
+          <li class="features__item features__like">Увеличивает лайки на фотографиях</li>
           <li class="features__item features__hand-made">Связано вручную с любовью и умилением</li>
           <li class="features__item features__national">Поддержка отечественного производителя</li>
           <li class="features__item features__packaging">Поставляется в подарочной упаковке</li>
@@ -88,7 +92,7 @@
       </section>
 
       <section class="reviews">
-        <h2 class="reviews_title">Отзывы</h2>
+        <h2 class="reviews__title">Отзывы</h2>
 
         <div class="reviews__wrapper slider">
           <blockquote class="reviews__item slider__item">
@@ -113,24 +117,32 @@
       </section>
 
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
 
-        <table class="contacts__table">
-          <tr>
-            <th class="contacts__field">e-mail:</th>
-            <td class="contacts__value">
-              <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-            </td>
-          </tr>
-          <tr>
-            <th class="contacts__field">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</th>
-            <td class="contacts__value">адрес:</td>
-          </tr>
-        </table>
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контакты</h2>
 
-        <img class="contacts__map-image" src="" width height alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-        <iframe class="contacts__map-interactive" src="#"></iframe>
-        <button class="contacts__write button">Напишите нам</button>
+          <table class="contacts__table">
+            <tr class="contacts__row">
+              <th class="contacts__field">e-mail:</th>
+              <td class="contacts__value">
+                <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </td>
+            </tr>
+            <tr class="contacts__row">
+              <th class="contacts__field">адрес: </th>
+              <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="contacts__container">
+          <img class="contacts__map-image" src="img/map-mobile@1x.jpg" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          <iframe class="contacts__map-interactive" src="https://yandex.ru/map-widget/v1/-/CBumqDDIHA" height="457" allowfullscreen="true"></iframe>
+        </div>
+
+        <div class="contacts__wrapper">
+          <button class="contacts__write button">Напишите нам</button>
+        </div>
       </section>
     </main>
 
@@ -138,30 +150,25 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social-link social_instagramm" href="#"><span class="visually-hidden">Instagramm</span></a>
+            <a class="social__link social__instagramm" href="#"><span class="visually-hidden">Instagramm</span></a>
           </li>
-        </ul>
-        <ul class="social__list">
           <li class="social__item">
-            <a class="social-link social_facebook" href="#"><span class="visually-hidden">Facebook</span></a>
+            <a class="social__link social__facebook" href="#"><span class="visually-hidden">Facebook</span></a>
           </li>
-        </ul>
-        <ul class="social__list">
           <li class="social__item">
-            <a class="social-link social_twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+            <a class="social__link social__twitter" href="#"><span class="visually-hidden">Twitter</span></a>
           </li>
         </ul>
       </div>
 
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text"></b>
-        <a class="copyright__link" href="#">HTML Academy</a>
+        <b class="copyright__text">Разработано</b><a class="copyright__link" href="#"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </footer>
 
-    <div class="modal modal-buy">
-      <div class="modal-byu__wrapper">
-        <b class="modal-byu__title">Добавить в корзину</b>
+    <div class="modal">
+      <div class="modal__wrapper modal-byu">
+        <b class="modal-byu__title">Добавить<br>в корзину</b>
         <span class="modal-byu__subtitle">Выберите размер:</span>
 
         <div class="modal-byu__container">
