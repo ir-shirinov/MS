@@ -1,3 +1,12 @@
+.page-body {
+  min-width: 320px;
+  max-width: 760px;
+  margin:0 auto;
+  padding: 0;
+
+  @include font-bold-black;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input.visually-hidden {
   position: absolute;
@@ -13,4 +22,13 @@ input.visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
