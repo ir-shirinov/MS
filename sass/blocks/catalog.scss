@@ -1,15 +1,48 @@
 .catalog__list {
-@include reset-list;
+  @include reset-list;
+
+  width: 320px;
+  margin: 0 auto;
 }
 
 .catalog__link {
+  @include font-bold-black;
+
   display: block;
   padding: 27px $side-padding;
   padding-right: 160px;
 
-  @include font-bold-black;
   color: white;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: flex;
+    width: 768px;
+    margin: 0 auto;
+    margin-top: -114px;
+    padding: 0 50px;
+  }
+
+  .catalog__link {
+    width: 334px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    width: 1250px;
+    padding: 0 100px;
+  }
+
+  .catalog__link {
+    width: 525px;
+    padding-right: 370px;
+  }
 }
 
 .catalog__link-acsessuares {

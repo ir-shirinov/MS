@@ -8,6 +8,14 @@
   vertical-align: middle;
 }
 
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+    justify-content: flex-end;
+    width: 190px;
+  }
+}
+
 .copyright__link {
   display: block;
   height:36px;
@@ -16,4 +24,11 @@
   background-image: url("../img/htmlacademy.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    display: inline-block;
+    width: 27px;
+  }
 }

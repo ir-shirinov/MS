@@ -1,10 +1,30 @@
 .production {
-  margin: 0 30px;
+  margin: 0 auto;
   margin-bottom: 60px;
   padding-bottom: 30px;
   padding-top: 25px;
+  width: 260px;
 
   border: 1px solid #ececec;
+}
+
+@media (min-width: $tablet-width) {
+  .production {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+
+    width: 670px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production {
+    position: relative;
+
+    width: 1050px;
+    display: block;
+  }
 }
 
 .production__title {
@@ -21,9 +41,52 @@
   background-position: 0 50%;
 }
 
+@media (min-width: $tablet-width) {
+  .production__title {
+    order: 2;
+    margin: 40px;
+
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production__title {
+    order: 2;
+    margin-top: 45px;
+    margin-left: 760px;
+    margin-right: 131px;
+    margin-bottom: 30px;
+    padding: 0;
+    padding-top: 50px;
+
+    background-position: 0 0;
+  }
+}
+
 .production__video {
   margin: 0 auto;
   margin-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .production__video {
+    order: 1;
+    width: 670px;
+    height: 455px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 670px;
+    height: 455px;
+  }
 }
 
 .production__text{
@@ -35,9 +98,43 @@
   font-size: 14px;
 }
 
-.production__container{
+@media (min-width: $tablet-width) {
+  .production__text {
+    order: 3;
+
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production__text {
+    padding: 0;
+    margin-left: 760px;
+    margin-right: 60px;
+    margin-bottom: 50px;
+
+  }
+}
+
+.production__container {
   margin: 0 35px;
 }
+
+@media (min-width: $tablet-width) {
+  .production__container {
+    order: 4;
+    width: 585px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production__container {
+    margin-left: 760px;
+    margin-bottom: 60px;
+    width: 230px;
+  }
+}
+
 
 .production__button {
   display: block;

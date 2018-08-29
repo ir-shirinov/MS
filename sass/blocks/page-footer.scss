@@ -1,8 +1,46 @@
 .page-footer {
   background-color: $back-color;
-  padding: 0 $side-padding;
+  padding: 0 30px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 0 50px;
+    width: 768px;
+    height: 143px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 0 100px;
+    width: 1250px;
+  }
 }
 
 .page-footer__social {
   border-bottom: 1px solid #e5e5e5;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__social {
+    border: none;
+  }
+}
+
+.page-footer__logo-link {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo-link {
+    display: block;
+    margin-top: 51px;
+    width: 190px;
+  }
 }

@@ -1,9 +1,47 @@
+.order {
+  width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .order {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order {
+    width: 1150px;
+  }
+}
+
 .order__item {
   padding: 0;
   padding-top: 27px;
   padding-bottom: 9px;
   border: none;
   border-top: 1px solid $main-color;
+}
+
+@media (min-width: $tablet-width) {
+  .order__item {
+    position: relative;
+
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    border: none;
+  }
+
+  .order__item--gray {
+    background-color: #f1f1f1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__item {
+    padding-right: 50px;
+  }
 }
 
 .order__title {
@@ -17,19 +55,109 @@
   text-align: left;
 }
 
+@media (min-width: $tablet-width) {
+  .order__title {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+  }
+  .order__title--tel {
+    top: 45px;
+  }
+  .order__title--email {
+    top: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__title {
+    position: absolute;
+    top: 60px;
+    left: 114px;
+  }
+  .order__title--tel {
+    top: 45px;
+  }
+  .order__title--email {
+    top: 25px;
+  }
+}
+
 .order__subtitle {
   @include font-bold-black;
 
   display: block;
+  padding: 16px 0;
   padding-left: 63px;
   margin-bottom: 26px;
+  min-height: 50px;
+
 
   line-height: 18px;
 }
 
+@media (min-width: $tablet-width) {
+  .order__subtitle {
+    margin-left: 167px;
+    padding-left: 80px;
+
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__subtitle {
+    margin-left: 225px;
+    padding-left: 80px;
+
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .order__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 167px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__container {
+    justify-content: flex-start;
+    margin-left: 225px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .order__subtitle--checkbox {
+    width: 240px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__subtitle--checkbox {
+    width: 260px;
+    margin: 0;
+  }
+}
+
+
 .order__subtitle--left{
   padding-left: 0;
   margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .order__subtitle--left {
+    display: inline-block;
+    margin-right: 22px;
+    margin-left: 0;
+  }
 }
 
 .order__text{
@@ -40,7 +168,34 @@
 
   border: none;
   border-bottom: 2px solid #000;
-  background-color: none;
+  background-color: transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .order__text {
+    display: inline-block;
+    width: auto;
+    flex-grow: 1;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .order__user {
+    display: flex;
+    width: 500px;
+    margin-left: 217px;
+  }
+  .order__phone{
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__user {
+    width: 700px;
+    margin-left: 225px;
+  }
 }
 
 .order__text::-webkit-input-placeholder {
@@ -62,10 +217,25 @@
 .order__comment {
   padding: 15px;
   width: 100%;
-  box-sizing: border-box;
   margin-bottom: 20px;
 
   border: 2px solid #000;
+}
+
+@media (min-width: $tablet-width) {
+  .order__comment {
+    width: 500px;
+    margin: 0;
+    margin-left: 217px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__comment {
+    width: 700px;
+    margin-left: 225px;
+  }
 }
 
 .order__explanation {
@@ -76,4 +246,38 @@
 
   font-size: 14px;
   line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .order__explanation {
+    position: absolute;
+    top: 285px;
+    right: 50px;
+
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__explanation {
+    right: 225px;
+  }
+}
+
+.order__send {
+  margin-bottom: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .order__send {
+    width: 230px;
+    margin-bottom: 50px;
+    margin-top: -20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .order__send {
+    margin-left: 225px;
+  }
 }

@@ -1,14 +1,56 @@
 .features {
+  margin: 0 auto;
   margin-top: 35px;
-  padding: 0 $side-padding;
+  padding: 0 30px;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    margin-top: 50px;
+    padding: 0 50px;
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    margin-top: 60px;
+    padding: 0 275px;
+    width: 1250px;
+  }
 }
 
 .features__title {
   @include title;
 }
 
+@media (min-width: $tablet-width) {
+  .features__title {
+    margin-bottom: 50px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__title {
+    font-size: 50px;
+    line-height: 53px;
+  }
+}
+
 .features__list {
   @include reset-list;
+}
+
+@media (min-width: $tablet-width) {
+  .features__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
 }
 
 .features__item{
@@ -21,26 +63,80 @@
   background-position: top 35px left 0;
 }
 
+@media (min-width: $tablet-width) {
+  .features__item{
+    width: 334px;
+    padding-top: 55px;
+    margin-bottom: 60px;
+
+    font-size: 20px;
+    line-height: 22px;
+    background-position: top 0 left 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__item{
+    width: 350px;
+  }
+}
+
 .features__ecologically {
   background-image: url("../img/icon-feature-flower.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .features__ecologically{
+    order: 1;
+  }
 }
 
 .features__price {
   background-image: url("../img/icon-feature-money.svg");
 }
 
+@media (min-width: $tablet-width) {
+  .features__price{
+    order: 3;
+  }
+}
+
 .features__like {
   background-image: url("../img/icon-feature-heart.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .features__like{
+    order: 5;
+  }
 }
 
 .features__hand-made {
   background-image: url("../img/icon-feature-ball.svg");
 }
 
+@media (min-width: $tablet-width) {
+  .features__hand-made{
+    order: 2;
+  }
+}
+
 .features__national {
   background-image: url("../img/icon-feature-rocket.svg");
 }
 
+@media (min-width: $tablet-width) {
+  .features__national{
+    order: 4;
+  }
+}
+
 .features__packaging {
   background-image: url("../img/icon-feature-gift.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .features__packaging{
+    order: 6;
+  }
 }
