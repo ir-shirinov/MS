@@ -16,15 +16,23 @@
   left: 50%;
 
   box-sizing: border-box;
-  padding-left:9.37%;
-  padding-right:9.37%;
+  padding-left:30px;
+  padding-right:30px;
   padding-bottom: 46px;
   padding-top: 35px;
-  width: 100%;
+  width: 320px;
 
   background-color: rgb(255,255,255);
   border-top: 1px solid #c7c7c7;
   box-shadow: 0 5px 10px 0 rgba(0,0,0,.25);
 
   transform: translateX(-50%);
+}
+
+@media (min-width: $tablet-width) {
+  .modal__wrapper {
+    padding: 47px 100px;
+    width: 567px;
+    border: 1px solid #c7c7c7;
+  }
 }

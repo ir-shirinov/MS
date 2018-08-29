@@ -7,36 +7,50 @@
     <title>Каталог MISHKA</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
 
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="Логотип компнии Мишка">
+        <img class="page-header__logo-image--table" src="img/mishka-logo-tablet.png" width="113" height="46" alt="Логотип компнии Мишка для планшета">
+        <img class="page-header__logo-image--desktop" src="img/mishka-logo-desktop.png" width="149" height="72" alt="Логотип компнии Мишка для компьютера">
       </a>
 
-      <nav class="main-nav">
-        <button class="main-nav__toogle" type="button">Открыть меню</button>
+      <button class="page-header__toogle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
 
+      <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__items">
-            <a class="main-nav__link" href="#" >Каталог товаров</a>
+            <a class="main-nav__link main-nav__link-catalog" href="#" >Каталог товаров</a>
           </li>
-          <li class="main-nav--items">
+          <li class="main-nav__items">
             <a class="main-nav__link" href="#" >Вязание на заказ</a>
           </li>
         </ul>
-
-        <div class="main-nav__wrapper">
-          <input class="main-nav__search" type="search" name="search-site" id ="search-site" placeholder="Поиск по сайту">
-          <label for="search-site" class="visually-hidden">Поиск по сайту</label>
-        </div>
-
-        <a class="page-header__cart" href="#">Корзина: пока пуста</a>
       </nav>
+
+      <div class="page-header__search">
+        <button class="page-header__find">
+          <span class="visually-hidden">Найти</span>
+        </button>
+        <input class="page-header__value" type="search" name="search-site" id ="search-site" placeholder="Поиск по сайту">
+        <label class="visually-hidden" for="search-site">Поиск по сайту</label>
+      </div>
+
+      <a class="page-header__cart" href="#">Корзина: пока пуста</a>
+
+      <p class="page-header__delivery">Бесплатная доставка по России</p>
+
+      <div class="page-header__new">
+        <a class="page-header__arrival" href="#">Новые поступления</a>
+        <a class="page-header__sale" href="#">Распродажа</a>
+      </div>
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Каталог товаров</h1>
+      <h1 class="page-main__title page-main__title--inner">Каталог товаров</h1>
 
       <section class="goods">
         <h2 class="visually-hidden">Вязанные игрушки</h1>
@@ -80,7 +94,7 @@
 
       <section class="production">
         <h2 class="production__title">Процесс производства</h2>
-        <video class="production__video" src="#" poster="img/video-mobile@1x.jpg" width="260" height="150"></video>
+        <video class="production__video" src="#" poster="img/video-mobile@1x.jpg" width="258" height="150"></video>
         <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <div class="production__container">
           <a class="production__button button" href="form.html">Сделать заказ</a>
@@ -89,6 +103,11 @@
     </main>
 
     <footer class="page-footer">
+
+      <a class="page-footer__logo-link">
+        <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="Логотип компнии Мишка">
+      </a>
+
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">

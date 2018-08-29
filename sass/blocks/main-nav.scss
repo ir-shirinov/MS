@@ -1,7 +1,87 @@
 .main-nav {
   position: absolute;
-  top: 100%;
+  bottom: -162px;
   left: 0;
 
   display: none;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    bottom: -60px;
+    left: 50px;
+
+    display: block;
+    height: 60px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    position: static;
+
+    width: 430px;
+    height: auto;
+    margin-right: 320px;
+  }
+}
+
+.main-nav__list {
+  @include reset-list;
+
+  background-color: #fff;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    height: 100%;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding: 27.5px 76px;
+  padding-right: 20px;
+
+  @include font-bold-black;
+
+  border-bottom: $border-top;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__link {
+    display: block;
+    padding: 18px 0;
+    padding-right: 35px;
+
+    font-size: 15px;
+
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__link {
+    padding: 33px 0;
+    padding-right: 0;
+
+    font-size: 17px;
+  }
+
+  .main-nav__link-catalog {
+    padding-right: 35px;
+    margin-right: 35px;
+
+    border-right: $border-top;
+  }
 }

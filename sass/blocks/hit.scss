@@ -1,6 +1,27 @@
 .hit {
+  position: relative;
+
+  width: 320px;
+  margin: 0 auto;
   margin-top: 30px;
-  padding: 0 $side-padding;
+  padding: 0 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .hit {
+    margin-top: 50px;
+    width: 768px;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hit {
+    margin-top: 125px;
+    width: 1250px;
+    padding: 0 100px;
+    padding-left: 275px;
+  }
 }
 
 .hit__title {
@@ -13,8 +34,36 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .hit__title {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+
+    width: 85px;
+
+    line-height: 17px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hit__title {
+    left: 143px;
+  }
+}
+
 .hit__subtitle {
   @include title;
+}
+
+@media (min-width: $tablet-width) {
+  .hit__subtitle {
+    margin-bottom: 55px;
+    padding-right: 120px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .hit__about {
@@ -23,6 +72,16 @@
 
   @include font-text;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .hit__about {
+    width: 290px;
+    margin-bottom: 35px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .hit__table {
@@ -34,6 +93,19 @@
   text-align: left;
 
   border-collapse: collapse;
+}
+
+@media (min-width: $tablet-width) {
+  .hit__table {
+    width: 290px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hit__table {
+    margin-bottom: 105px;
+  }
 }
 
 .hit__row {
@@ -57,6 +129,21 @@
   margin-bottom: 30px;
 }
 
+@media (min-width: $tablet-width) {
+  .hit__image {
+    position: absolute;
+    top: 115px;
+    right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hit__image {
+    top: -50px;
+    right: 100px;
+  }
+}
+
 .hit__price {
   margin: 0;
   margin-bottom: 28px;
@@ -65,6 +152,28 @@
   color: #444;
 }
 
+@media (min-width: $tablet-width) {
+  .hit__price {
+    width: 290px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
 .hit__button {
   margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .hit__button {
+    width: 290px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hit__button {
+    margin-bottom: 72px;
+  }
 }
