@@ -19,6 +19,12 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+  @media (min-resolution: 192dpi), (min-resolution: 2 dppx) {
+  .reviews {
+    background-image: url("../img/review@2x.jpg");
+    background-size: 350px 457px;
+  }
+  }
 }
 
 @media (min-width: $desktop-width) {

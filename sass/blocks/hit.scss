@@ -132,6 +132,7 @@
 @media (min-width: $tablet-width) {
   .hit__image {
     position: absolute;
+    z-index: -1;
     top: 115px;
     right: 50px;
   }

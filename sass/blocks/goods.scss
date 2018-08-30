@@ -51,13 +51,12 @@
 
 .goods__link-img {
   display: block;
+  width: auto;
+  height: auto;
 }
 
 .goods__image {
   display: block;
-
-  width: 100%;
-  height: auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -65,8 +64,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 334px;
-    height: 334px;
   }
 }
 
@@ -74,8 +71,6 @@
   .goods__image {
     position:static;
 
-    width: 316px;
-    height: 462px;
   }
 }
 

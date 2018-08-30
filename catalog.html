@@ -57,9 +57,15 @@
 
         <ul class="goods__list">
           <li class="goods__item">
+
             <a class="goods__link-img" href="#">
-              <img class="goods__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Вязанный зайчик">
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                <img class="goods__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Вязанный зайчик">
+              </picture>
             </a>
+
             <div class="goods__container">
               <a class="goods__link-title" href="#"><h3 class="goods__title">Зайчик-попрыгайчик</h3></a>
               <p class="goods__about">Рост 30 см, вес 200 г</p>
@@ -68,8 +74,13 @@
           </li>
 
           <li class="goods__item">
+
             <a class="goods__link-img" href="#">
-              <img class="goods__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Вязанная корзинка для белья">
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                <img class="goods__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x"alt="Вязанная корзинка для белья">
+              </picture>
             </a>
 
             <div class="goods__container">
@@ -80,9 +91,15 @@
           </li>
 
           <li class="goods__item">
+
             <a class="goods__link-img" href="#">
-              <img class="goods__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Вязанная корзинка для игрушек">
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                <img class="goods__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Вязанная корзинка для игрушек">
+              </picture>
             </a>
+
             <div class="goods__container">
               <a class="goods__link-title" href="#"><h3 class="goods__title">Большая корзинка для игрушек</h3></a>
               <p class="goods__about">Диаметр 30 см, высота 30 см</p>
@@ -141,6 +158,9 @@
         <button class="modal-byu__add button">Добавить</button>
       </div>
     </div>
+
+    <script src="js/picturefill.js"></script>
+    <script src="js/script.js"></script>
 
   </body>
 </html>

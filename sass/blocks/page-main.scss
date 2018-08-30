@@ -43,10 +43,33 @@
   background-repeat: no-repeat;
 }
 
+@media (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .page-main__title--background {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-main__title--background {
-    background-image: url("../img/hero-desktop.jpg");
-    background-position: top 0  right 50%;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-size: 1150px 746px;
+  }
+  @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .page-main__title--background {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title--background {
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-size: 1150px 746px;
+  }
+  @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .page-main__title--background {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 }
 

@@ -87,7 +87,11 @@
           </tr>
         </table>
 
-        <img class="hit__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="3 вязанные корзинки">
+        <picture>
+          <source media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img class="hit__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="3 вязанные корзинки">
+        </picture>
         <p class="hit__price">Цена: 990 руб.</p>
         <button class="hit__button button" type="button">Заказать</button>
       </section>
@@ -149,7 +153,11 @@
         </div>
 
         <div class="contacts__container">
-          <img class="contacts__map-image" src="img/map-mobile@1x.jpg" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          <picture>
+            <source media="(min-width: 1250px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          </picture>
           <iframe class="contacts__map-interactive" src="https://yandex.ru/map-widget/v1/-/CBumqDDIHA" height="457" allowfullscreen="true"></iframe>
         </div>
 
@@ -198,6 +206,9 @@
         <button class="modal-byu__add button">Добавить</button>
       </div>
     </div>
+
+    <script src="js/picturefill.js"></script>
+    <script src="js/script.js"></script>
 
   </body>
 </html>
