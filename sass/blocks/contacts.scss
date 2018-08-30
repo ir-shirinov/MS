@@ -142,6 +142,14 @@
   @include font-text;
   text-decoration: none;
   border-bottom: 1px solid $main-color;
+
+  &:hover {
+    color: $main-color;
+  }
+
+  &:active {
+    opacity: .3;
+  }
 }
 
 .contacts__container{

@@ -30,6 +30,14 @@
 
 .goods__item {
   margin-top: 30px;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -118,6 +126,14 @@
   margin-right: 28px;
 
   @include font-bold-black;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -11,4 +11,14 @@
 
   background-color: #fff;
   border: 1px solid #444;
+
+  &:hover {
+    color: rgb(255,255,255);
+
+    background-color: #444;
+  }
+
+  &:active {
+    color: rgba(255,255,255,.3);
+  }
 }

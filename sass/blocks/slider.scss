@@ -1,0 +1,38 @@
+.slider__prev {
+  width: 50px;
+  height: 27px;
+  margin-right: 44px;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-left-arrow.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
+}
+
+.slider__next {
+  width: 50px;
+  height: 27px;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-right-arrow.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
+}

@@ -5,6 +5,11 @@
   margin: 0 auto;
   margin-top: 30px;
   padding: 0 30px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: bottom 0 left 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -46,7 +51,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .hit__title {
     left: 143px;
   }

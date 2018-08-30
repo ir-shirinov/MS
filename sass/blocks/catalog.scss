@@ -1,3 +1,27 @@
+.catalog {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+
+    height: 34px;
+    width: 100%;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: 0 0;
+    background-repeat: repeat-x;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog::after {
+    content: "";
+  }
+}
+
+
 .catalog__list {
   @include reset-list;
 
@@ -14,6 +38,14 @@
 
   color: white;
   text-decoration: none;
+
+  &:hover {
+    padding-bottom: 32px;
+  }
+
+  &:active {
+    color: rgba(255,255,255,0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

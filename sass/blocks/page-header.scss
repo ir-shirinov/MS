@@ -118,6 +118,12 @@
   background-color: transparent;
   border: none;
 
+  &:hover {
+    outline: none;
+  }
+  &:focus{
+    outline: none;
+  }
 }
 
 .page-header__toogle--open {
@@ -229,6 +235,14 @@
 
   border-bottom: $border-top;
   background-color: #fff;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -291,10 +305,26 @@
   margin-right: 64px;
 
   font-weight: 700;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
 }
 
 .page-header__sale {
   @include font-text;
 
   font-weight: 700;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
 }

@@ -169,6 +169,19 @@
   border: none;
   border-bottom: 2px solid #000;
   background-color: transparent;
+
+  &:hover{
+    border-color: $main-color;
+  }
+
+  &:active{
+    border-color: $main-color;
+  }
+
+  &:focus{
+    border-color: $main-color;
+  }
+
 }
 
 @media (min-width: $tablet-width) {
@@ -220,6 +233,30 @@
   margin-bottom: 20px;
 
   border: 2px solid #000;
+
+  &:hover{
+    border-color: $main-color;
+  }
+
+  &:active{
+    border-color: $main-color;
+  }
+
+  &:focus{
+    border-color: $main-color;
+  }
+}
+
+.order__comment::-webkit-input-placeholder {
+  @include font-text;
+
+  line-height: 18px;
+}
+
+.order__comment::-moz-placeholder  {
+  @include font-text;
+
+  line-height: 18px;
 }
 
 @media (min-width: $tablet-width) {
@@ -281,3 +318,4 @@
     margin-left: 225px;
   }
 }
+

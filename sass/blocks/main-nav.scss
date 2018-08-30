@@ -56,6 +56,14 @@
   @include font-bold-black;
 
   border-bottom: $border-top;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
 }
 
 @media (min-width: $tablet-width) {
