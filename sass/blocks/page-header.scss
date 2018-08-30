@@ -34,6 +34,14 @@
   width: 150px;
   margin: 0 auto;
   text-align: center;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
 }
 
 @media (min-width: $tablet-width) {
