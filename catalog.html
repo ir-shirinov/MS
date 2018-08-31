@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="ручная работа, вязанные игрушки">
     <meta name="decription" content="Лучший сайт по вязнным игрушкам ручной работы">
-    <title>Каталог MISHKA</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MISHKA</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
-
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="Логотип компнии Мишка">
@@ -122,25 +126,49 @@
     <footer class="page-footer">
 
       <a class="page-footer__logo-link">
-        <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="Логотип компнии Мишка">
+        <svg width="102" height="34" aria-labelledby="title">
+          <use xlink:href="#icon-logo-footer"></use>
+          <title>Логотип компнии Мишка</title>
+        </svg>
       </a>
 
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__instagramm" href="#"><span class="visually-hidden">Instagramm</span></a>
+            <a class="social__link social__instagramm" href="#">
+              <svg width="22" height="22" aria-labelledby="title">
+                <use xlink:href="#icon-insta"></use>
+                <title>instagramm</title>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__facebook" href="#"><span class="visually-hidden">Facebook</span></a>
+            <a class="social__link social__facebook" href="#">
+              <svg width="15" height="28" aria-labelledby="title">
+                <use xlink:href="#icon-fb"></use>
+                <title>Facebook</title>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+            <a class="social__link social__twitter" href="#">
+              <svg width="24" height="21" aria-labelledby="title">
+                <use xlink:href="#icon-twitter"></use>
+                <title>twitter</title>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
 
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b><a class="copyright__link" href="#"><span class="visually-hidden">HTML Academy</span></a>
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="#">
+          <svg width="80" fill="#63d1bb" height="36" aria-labelledby="title">
+            <use xlink:href="#icon-htmlacademy"></use>
+            <title>Логотип</title>
+          </svg>
+        </a>
       </div>
     </footer>
 

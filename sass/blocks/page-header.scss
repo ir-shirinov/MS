@@ -106,7 +106,7 @@
 @media (min-width: $desktop-width) {
   .page-header__logo-image--desktop {
     display: block;
-    width: 149;
+    width: 149px;
     height: 72px;
   }
 }
@@ -233,6 +233,7 @@
   position: absolute;
   top: 320px;
   right: 0;
+  z-index: 2;
 
   display: none;
   padding: 27.5px 76px;
@@ -251,6 +252,12 @@
   &:active {
     opacity: .3;
   }
+
+  & svg {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
 }
 
 @media (min-width: $tablet-width) {
@@ -265,7 +272,13 @@
     text-align: right;
 
     border: none;
+
+    & svg {
+      display: none;
+    }
   }
+
+
 }
 
 .page-header__delivery {
