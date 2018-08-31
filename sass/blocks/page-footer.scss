@@ -35,6 +35,14 @@
 
 .page-footer__logo-link {
   display: none;
+
+  &:hover svg {
+    fill: $main-color;
+  }
+
+  &:active svg {
+    opacity: .3;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -19,11 +19,16 @@
 .copyright__link {
   display: block;
   height:36px;
-  width: 80px;
+  width: 60px;
+  text-align: right;
 
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active svg {
+    opacity: .3;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -28,18 +28,29 @@
   display: block;
   height: 80px;
 
+  line-height: 80px;
+  vertical-align: middle;
+
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active svg {
+    opacity: .3;
+  }
 }
 
 .social__instagramm {
-  background-image: url("../img/icon-insta.svg");
+
 }
 
 .social__facebook {
-  background-image: url("../img/icon-fb.svg");
+
 }
 
 .social__twitter {
-  background-image: url("../img/icon-twitter.svg");
+
 }
